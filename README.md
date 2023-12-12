@@ -1,1 +1,3 @@
-# final_project_pizza_shop
+# School Final Project
+
+## Sol's Pizza
