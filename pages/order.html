@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- Language Meta Tag, must update accordingly-->
+		<meta name="language" content="EN" />
+		<!-- Description Meta Tag, must update accordingly -->
+		<meta name="description" content="Sol's Pizza" />
+		<!-- Subject Meta Tag, must update accordingly -->
+		<meta name="subject" content="your website's subject" />
+		<!-- copyright Meta Tag, must update accordingly -->
+		<meta name="copyright" content="A.M.P.L. LLC" />
+		<!-- Date Meta Tag -->
+		<meta name="date" content="Dec 12, 2023" />
+		<!-- Google Meta Tag, Must update accordingly -->
+		<meta name="news_keywords" content="Sol's Pizza" />
+		<!-- TweetMeme Meta Tag, must update accordingly -->
+		<meta name="tweet-meme-title" content="Sol's Pizza" />
+		<!-- Viewport Meta Tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon Meta Link, must update accordingly-->
+		<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+		<!-- Stylesheet Meta Link, must update accordingly -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/styles.css"
+			media="all"
+		/>
+		<!-- font-awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Sol's Pizza</title>
+	</head>
+	<body>
+		<!-- Header Starts -->
+		<header>
+			<div class="logo">
+				<a href="index.html"> Sol's Pizza</a>
+			</div>
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="index.html">Home</a>
+				<a href="./pages/menu.html" target="_blank">Menu</a>
+				<a href="./pages/order.html" target="_blank">Order</a>
+				<a href="./pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
+			</nav>
+			<div class="mobile-menu-icon" onclick="toggleMobileNav()">
+				<i class="fa fa-car fa-lg"></i>
+			</div>
+		</header>
+		<!-- Header Ends -->
+		<!-- Mobile Nav Starts -->
+		<div class="mobile-nav">
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="index.html">Home</a>
+				<a href="./pages/menu.html" target="_blank">Menu</a>
+				<a href="./pages/order.html" target="_blank">Order</a>
+				<a href="./pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
+			</nav>
+		</div>
+		<!-- Mobile Nav Ends -->
+
+		<!-- Hero Section Starts -->
+		<section class="hero">
+			<!-- Add your hero content here -->
+			<div class="hero-title-container">
+				<h1>
+					Welcome to <br />
+					Sol's Pizza
+				</h1>
+				<p>Delicious pizzas made just for you!</p>
+				<button onclick="redirectToPage()">Order</button>
+			</div>
+		</section>
+		<!-- Hero Section Ends -->
+
+		<div class="form-container">
+			<!-- Form Section Starts -->
+			<section class="form-section">
+				<form action="form.html" method="post">
+					<label for="firstname">First Name:<span class="required">*</span></label>
+
+					<input
+						type="text"
+						id="firstname"
+						name="firstname"
+						placeholder="First Name"
+						required
+					/>
+					<br />
+					<label for="lastname">Last Name:<span class="required">*</span></label>
+
+					<input
+						type="text"
+						id="lastname"
+						name="lastname"
+						placeholder="Last Name"
+						required
+					/>
+					<br />
+					<label for="email">Email:<span class="required">*</span></label>
+					<input type="email" id="email" name="email" placeholder="Email" required />
+
+					<br />
+					<!-- Phone Section -->
+					<label for="phone">Phone:<span class="required">*</span></label>
+					<input type="tel" id="phone" name="phone" placeholder="Phone" required />
+					<br />
+					<!-- Address Section -->
+					<label for="street">Street Address:<span class="required">*</span></label>
+					<input
+						type="text"
+						id="street"
+						name="street"
+						placeholder="Enter street address"
+						required
+					/>
+					<br />
+					<label for="unit">Unit, Apt, Suite:<span class=""></span></label>
+					<input
+						type="text"
+						id="unit"
+						name="unit"
+						placeholder="Unit, Apt, Suite"
+						required
+					/>
+					<br />
+					<label for="city">City:<span class="required">*</span></label>
+					<input
+						type="text"
+						id="city"
+						name="city"
+						placeholder="Enter city"
+						required
+					/>
+					<br />
+					<!-- State Section -->
+					<label for="state">State:<span class="required">*</span></label>
+					<select id="state" name="state" required>
+						<option value="empty">---</option>
+						<option value="ma">Massachusetts</option>
+					</select>
+					<br />
+					<div class="order-container">
+						<!-- Order Section -->
+						<label for="pizza">Pizza:<span class="label-title"></span></label>
+						<input
+							type="checkbox"
+							id="meat-lover"
+							name="pizza"
+							value="meat-lover"
+							required
+						/>
+						<label for="meat-lovers">Meat Lover<span class=""></span></label>
+						<input type="checkbox" id="cheese" name="pizza" value="cheese" required />
+						<label for="cheese">Cheese<span class="required"></span></label>
+						<input type="checkbox" id="vegan" name="pizza" value="vegan" required />
+						<label for="vegan">Vegan<span class="required"></span></label>
+					</div>
+					<br />
+					<div class="order-container">
+						<!-- Gender Section -->
+						<label for="calzone">Calzone's:<span class="required"></span></label>
+						<input
+							type="checkbox"
+							id="four-cheese"
+							name="calzone"
+							value="four-cheese"
+							required
+						/>
+						<label for="four-cheese">Four Cheese<span class="required"></span></label>
+						<input
+							type="checkbox"
+							id="spinach-cheese"
+							name="calzone"
+							value="spinach-cheese"
+							required
+						/>
+						<label for="spinach-cheese"
+							>Spinach Cheese<span class="required"></span
+						></label>
+						<input
+							type="checkbox"
+							id="female"
+							name="calzone"
+							value="meat-lover-calzone"
+							required
+						/>
+						<label for="meat-lover-calzone"
+							>Meat Lover Calzone<span class="required"></span
+						></label>
+					</div>
+					<br />
+					<div class="order-container">
+						<!-- Gender Section -->
+						<label for="salad">Salad's:<span class="required"></span></label>
+						<input
+							type="checkbox"
+							id="caesar-salad"
+							name="salad"
+							value="caesar-salad"
+							required
+						/>
+						<label for="caesar-salad"
+							>Caesar Salad<span class="required"></span
+						></label>
+						<input
+							type="checkbox"
+							id="garden-salad"
+							name="salad"
+							value="garden-salad"
+							required
+						/>
+						<label for="garden-salad"
+							>Garden Salad<span class="required"></span
+						></label>
+						<input
+							type="checkbox"
+							id="house-salad"
+							name="salad"
+							value="house-salad"
+							required
+						/>
+						<label for="house-salad">House Salad<span class="required"></span></label>
+					</div>
+					<br />
+					<button class="form-btn" type="submit" value="submit">Order</button>
+				</form>
+			</section>
+		</div>
+
+		<!-- Footer Starts-->
+		<footer>
+			<p>&copy; 2023 Sol's Pizza. All rights reserved.</p>
+			<p>Contact us: <a href="mailto:info@solspizza.com">info@solspizza.com</a></p>
+		</footer>
+		<!-- Footer Ends -->
+	</body>
+	<script src="/scripts/script.js"></script>
+</html>

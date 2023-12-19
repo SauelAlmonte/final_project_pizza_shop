@@ -22,74 +22,117 @@
 		<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 		<!-- Stylesheet Meta Link, must update accordingly -->
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" media="all" />
+		<!-- font-awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<title>Sol's Pizza</title>
 	</head>
 	<body>
-		<!-- Header -->
+		<!-- Header Starts -->
 		<header>
 			<div class="logo">
-				<a href=""><img src="" alt="" />Your Logo Here</a>
+				<a href="index.html"> Sol's Pizza</a>
 			</div>
 			<nav class="menu">
 				<!-- Add your menu items here -->
-				<a href="#">Home</a>
-				<a href="#">Menu</a>
+				<a href="index.html">Home</a>
+				<a href="./pages/menu.html" target="_blank">Menu</a>
+				<a href="./pages/order.html" target="_blank">Order</a>
+				<a href="./pages/about_us.html" target="_blank">About Us</a>
 				<!-- Add more menu items as needed -->
 			</nav>
+			<div class="mobile-menu-icon" onclick="toggleMobileNav()">
+				<i class="fa fa-car fa-lg"></i>
+			</div>
 		</header>
+		<!-- Header Ends -->
+		<!-- Mobile Nav Starts -->
+		<div class="mobile-nav">
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="index.html">Home</a>
+				<a href="./pages/menu.html" target="_blank">Menu</a>
+				<a href="./pages/order.html" target="_blank">Order</a>
+				<a href="./pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
+			</nav>
+		</div>
+		<!-- Mobile Nav Ends -->
 
-		<!-- Hero Section -->
+		<!-- Hero Section Starts -->
 		<section class="hero">
 			<!-- Add your hero content here -->
-			<h1>Welcome to Sol's Pizza</h1>
-			<p>Delicious pizzas made just for you!</p>
+			<div class="hero-title-container">
+				<h1>
+					Welcome to <br />
+					Sol's Pizza
+				</h1>
+				<p>Delicious pizzas made just for you!</p>
+				<button onclick="redirectToPage()">Order</button>
+			</div>
 		</section>
+		<!-- Hero Section Ends -->
 
-		<!-- Sections with Aside -->
-		<section class="section-with-aside">
-			<div class="content">
-				<!-- Add your content for the first section here -->
-				<h2>Section 1</h2>
-				<p>Your text goes here.</p>
-			</div>
-			<aside>
-				<!-- Add aside content for the first section here -->
-				<h3>Aside 1</h3>
-				<p>Your aside content goes here.</p>
-			</aside>
-		</section>
-		<!-- Sections with Aside -->
-		<section class="section-with-aside">
-			<div class="content">
-				<!-- Add your content for the first section here -->
-				<h2>Section 1</h2>
-				<p>Your text goes here.</p>
-			</div>
-			<aside>
-				<!-- Add aside content for the first section here -->
-				<h3>Aside 1</h3>
-				<p>Your aside content goes here.</p>
-			</aside>
-		</section>
-		<!-- Sections with Aside -->
-		<section class="section-with-aside">
-			<div class="content">
-				<!-- Add your content for the first section here -->
-				<h2>Section 1</h2>
-				<p>Your text goes here.</p>
-			</div>
-			<aside>
-				<!-- Add aside content for the first section here -->
-				<h3>Aside 1</h3>
-				<p>Your aside content goes here.</p>
-			</aside>
-		</section>
-		<!-- Footer -->
-		<!-- Footer -->
+		<div class="section-container">
+			<!-- Sections with Aside Start-->
+			<section class="section-with-aside">
+				<div class="content">
+					<!-- Add your content for the first section here -->
+					<h2>Pizza's</h2>
+					<p>
+						Indulge in the savory goodness of our handcrafted pizzas. Our chefs use
+						only the finest ingredients to create a symphony of flavors that will
+						tantalize your taste buds. Whether you're a fan of classic Margherita or
+						adventurous with our specialty pizzas, we have something for everyone.
+					</p>
+				</div>
+				<aside>
+					<img src="./images/pizza-6.jpeg" alt="pizza-img" />
+				</aside>
+			</section>
+
+			<section class="section-with-aside">
+				<div class="content">
+					<!-- Add your content for the first section here -->
+					<h2>Calzone's</h2>
+					<p>
+						Experience the perfect blend of textures and flavors with our delicious
+						calzone's. Each calzone is carefully crafted to bring you a mouthwatering
+						combination of premium ingredients enveloped in golden-brown perfection.
+						Treat yourself to a taste sensation with our delightful calzones.
+					</p>
+				</div>
+				<aside>
+					<img src="./images/calzones-2.jpeg" alt="calzone-img" />
+				</aside>
+			</section>
+
+			<section class="section-with-aside">
+				<div class="content">
+					<!-- Add your content for the first section here -->
+					<h2>Salad's</h2>
+					<p>
+						Refresh your palate with our crisp and flavorful salads. Made with the
+						freshest, locally sourced ingredients, our salads are a delightful and
+						healthy choice. From classic Caesar to exotic Mediterranean, our salad
+						selection offers a variety that complements any meal.
+					</p>
+				</div>
+				<aside>
+					<img src="./images/salads.jpeg" alt="salads-img" />
+				</aside>
+			</section>
+			<!-- Sections with Aside Ends-->
+		</div>
+
+		<!-- Footer Starts-->
 		<footer>
-			<p>&copy; 2023 Sol's Pizza. All rights reserved.</p>
+			<p>&copy; 2023 Sol's Pizza. All rights reserved. A.M.P.L. LLC</p>
 			<p>Contact us: <a href="mailto:info@solspizza.com">info@solspizza.com</a></p>
 		</footer>
+		<!-- Footer Ends -->
 	</body>
 	<script src="/scripts/script.js"></script>
 </html>
