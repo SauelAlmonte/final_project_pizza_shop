@@ -30,24 +30,92 @@
 		<title>Sol's Pizza</title>
 	</head>
 	<body>
+		<!-- Header Starts -->
 		<header>
-			<a href="/index.html">
-				<img src="" alt="logo" />
-			</a>
-			<nav>
-				<ul>
-					<li><a href="pages/about_us.html">About Us</a></li>
-					<li><a href="pages/contact.html">Contact Us</a></li>
-					<li><a href="pages/menu.html">Menu</a></li>
-					<li><a href="pages/careers.html">Jobs</a></li>
-				</ul>
+			<div class="logo">
+				<a href="../index.html"> Sol's Pizza</a>
+			</div>
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="../index.html">Home</a>
+				<a href="../pages/menu.html" target="_blank">Menu</a>
+				<a href="../pages/order.html" target="_blank">Order</a>
+				<a href="../pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
 			</nav>
+			<div class="mobile-menu-icon" onclick="toggleMobileNav()">
+				<i class="fa fa-car fa-lg"></i>
+			</div>
 		</header>
-		<main>Hero Section</main>
-		<section>Section 1</section>
-		<section>Section 2</section>
-		<section>Section 3</section>
-		<footer>Sol's Pizza &copy; A.M.P.L. LLC 2023</footer>
+		<!-- Header Ends -->
+		<!-- Mobile Nav Starts -->
+		<div class="mobile-nav">
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="../index.html">Home</a>
+				<a href="../pages/menu.html" target="_blank">Menu</a>
+				<a href="../pages/order.html" target="_blank">Order</a>
+				<a href="../pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
+			</nav>
+		</div>
+		<!-- Mobile Nav Ends -->
+
+		<!-- Hero Section Starts -->
+		<section class="hero">
+			<!-- Add your hero content here -->
+			<div class="hero-title-container">
+				<h1>
+					Welcome to <br />
+					Sol's Pizza
+				</h1>
+				<p>Delicious pizzas made just for you!</p>
+				<button onclick="redirectToPage()">Order</button>
+			</div>
+		</section>
+		<!-- Hero Section Ends -->
+
+		<div class="section-container">
+			<section class="about-us-section">
+				<h2>About Sol's Pizza</h2>
+				<p>
+					Welcome to Sol's Pizza, where passion meets flavor! At Sol's, we take pride
+					in creating mouthwatering pizzas and calzones using only the finest
+					ingredients. Our commitment to quality and authenticity sets us apart,
+					making each bite a delightful experience.
+				</p>
+
+				<p>
+					Founded by Sol Hernandez, a seasoned chef with a love for crafting
+					exceptional pizzas, our pizzeria has become a local favorite. Sol's Pizza
+					is not just a place to eat; it's a community that shares a love for
+					delicious food and great company.
+				</p>
+
+				<h3>Our Mission</h3>
+				<p>
+					At Sol's Pizza, our mission is simple: to deliver a culinary experience
+					that exceeds expectations. We strive to bring joy to our customers through
+					carefully crafted pizzas, calzones, and salads. Every dish is a testament
+					to our dedication to quality, flavor, and customer satisfaction.
+				</p>
+
+				<h3>Visit Us</h3>
+				<p>
+					We invite you to visit our pizzeria and savor the flavors that define Sol's
+					Pizza. Whether you're a meat lover, a cheese enthusiast, or a fan of
+					plant-based options, our diverse menu has something for everyone. Come join
+					us and experience the art of pizza making at its finest!
+				</p>
+			</section>
+		</div>
+
+		<!-- Footer Starts-->
+		<footer>
+			<p>&copy; 2023 Sol's Pizza. All rights reserved. A.M.P.L. LLC</p>
+			<p>Contact us: <a href="mailto:info@solspizza.com">info@solspizza.com</a></p>
+		</footer>
+		<!-- Footer Ends -->
 	</body>
 	<script src="/scripts/script.js"></script>
 </html>

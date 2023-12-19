@@ -24,30 +24,129 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="/styles/styles.css"
+			href="../styles/styles.css"
 			media="all"
+		/>
+		<!-- font-awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<title>Sol's Pizza</title>
 	</head>
 	<body>
+		<!-- Header Starts -->
 		<header>
-			<a href="/index.html">
-				<img src="" alt="logo" />
-			</a>
-			<nav>
-				<ul>
-					<li><a href="pages/about_us.html">About Us</a></li>
-					<li><a href="pages/contact.html">Contact Us</a></li>
-					<li><a href="pages/menu.html">Menu</a></li>
-					<li><a href="pages/careers.html">Jobs</a></li>
-				</ul>
+			<div class="logo">
+				<a href="../index.html"> Sol's Pizza</a>
+			</div>
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="../index.html">Home</a>
+				<a href="../pages/menu.html" target="_blank">Menu</a>
+				<a href="../pages/order.html" target="_blank">Order</a>
+				<a href="../pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
 			</nav>
+			<div class="mobile-menu-icon" onclick="toggleMobileNav()">
+				<i class="fa fa-car fa-lg"></i>
+			</div>
 		</header>
-		<main>Hero Section</main>
-		<section>Section 1</section>
-		<section>Section 2</section>
-		<section>Section 3</section>
-		<footer>Sol's Pizza &copy; A.M.P.L. LLC 2023</footer>
+		<!-- Header Ends -->
+		<!-- Mobile Nav Starts -->
+		<div class="mobile-nav">
+			<nav class="menu">
+				<!-- Add your menu items here -->
+				<a href="../index.html">Home</a>
+				<a href="../pages/menu.html" target="_blank">Menu</a>
+				<a href="../pages/order.html" target="_blank">Order</a>
+				<a href="../pages/about_us.html" target="_blank">About Us</a>
+				<!-- Add more menu items as needed -->
+			</nav>
+		</div>
+		<!-- Mobile Nav Ends -->
+
+		<!-- Hero Section Starts -->
+		<section class="hero">
+			<!-- Add your hero content here -->
+			<div class="hero-title-container">
+				<h1>
+					Welcome to <br />
+					Sol's Pizza
+				</h1>
+				<p>Delicious pizzas made just for you!</p>
+				<button onclick="redirectToPage()">Order</button>
+			</div>
+		</section>
+		<!-- Hero Section Ends -->
+
+		<div class="section-container">
+			<section class="shop-menu">
+				<div class="shop-menu-category">
+					<h2>Pizzas</h2>
+					<div class="shop-menu-item">
+						<h3>Meat Lover Pizza</h3>
+						<p>A savory pizza loaded with a variety of meats.</p>
+						<p>$24.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>Cheese Pizza</h3>
+						<p>A classic pizza with a generous amount of melted cheese.</p>
+						<p>$19.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>Vegan Pizza</h3>
+						<p>A plant-based pizza with delicious vegan toppings.</p>
+						<p>$39.99</p>
+					</div>
+				</div>
+
+				<div class="shop-menu-category">
+					<h2>Calzones</h2>
+					<div class="shop-menu-item">
+						<h3>Four Cheese Calzone</h3>
+						<p>A delightful calzone filled with a blend of four cheeses.</p>
+						<p>$20.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>Meat Lover Calzone</h3>
+						<p>A hearty calzone packed with various meat options.</p>
+						<p>$24.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>Spinach and Cheese Calzone</h3>
+						<p>A tasty calzone featuring spinach and gooey cheese.</p>
+						<p>$26.99</p>
+					</div>
+				</div>
+
+				<div class="shop-menu-category">
+					<h2>Salads</h2>
+					<div class="shop-menu-item">
+						<h3>Caesar Salad</h3>
+						<p>A classic Caesar salad with crisp lettuce and Caesar dressing.</p>
+						<p>$14.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>Garden Salad</h3>
+						<p>A fresh and colorful garden salad with assorted veggies.</p>
+						<p>$10.99</p>
+					</div>
+					<div class="shop-menu-item">
+						<h3>House Salad</h3>
+						<p>Our signature house salad with a special blend of ingredients.</p>
+						<p>$11.99</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer Starts-->
+		<footer>
+			<p>&copy; 2023 Sol's Pizza. All rights reserved. A.M.P.L. LLC</p>
+			<p>Contact us: <a href="mailto:info@solspizza.com">info@solspizza.com</a></p>
+		</footer>
+		<!-- Footer Ends -->
 	</body>
 	<script src="/scripts/script.js"></script>
 </html>
